@@ -1,0 +1,5 @@
+// before
+repeated = repeated + character
+
+// after
+repeated += character

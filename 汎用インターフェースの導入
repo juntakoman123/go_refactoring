@@ -1,0 +1,9 @@
+// before
+func Countdown(out *bytes.Buffer) {
+	fmt.Fprint(out, "3")
+}
+
+// after
+func Countdown(out io.Writer) {
+	fmt.Fprint(out, "3")
+}

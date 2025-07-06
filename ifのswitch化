@@ -1,0 +1,17 @@
+// before
+if language == spanish {
+	return spanishHelloPrefix + name
+}
+if language == french {
+	return frenchHelloPrefix + name
+}
+
+// after
+switch language {
+case french:
+	prefix = frenchHelloPrefix
+case spanish:
+	prefix = spanishHelloPrefix
+}
+
+特定の値をチェックする多くの ifステートメントがある場合、代わりにswitchステートメントを使用するのが一般的です

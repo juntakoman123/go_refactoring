@@ -1,0 +1,6 @@
+// before
+return errors.New("cannot withdraw, insufficient funds")
+
+// after
+var ErrInsufficientFunds = errors.New("cannot withdraw, insufficient funds")
+return ErrInsufficientFunds

@@ -1,0 +1,11 @@
+// before
+type Wallet struct {
+	balance int
+}
+
+// after
+type Bitcoin int
+
+type Wallet struct {
+	balance Bitcoin
+}
